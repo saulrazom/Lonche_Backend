@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¡Bienvenido!</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #2e2d2d;
+        margin: 0;
+        padding: 0;
+      }
+      .email-container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: #262626;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      }
+      .email-header {
+        background-color: #ff468d;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px;
+      }
+      .email-header h1 {
+        margin: 0;
+      }
+      .email-body {
+        padding: 20px;
+        color: #ffffff;
+      }
+      .email-body p {
+        line-height: 1.6;
+        color: #7c7c7c;
+      }
+      .email-footer {
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        color: #7c7c7c;
+        background-color: #393939;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        color: #ffffff;
+        background-color: #ff468d;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      .btn:hover {
+        background-color: #e01f69;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="email-header">
+        <h1>¡Bienvenido a Lonche!</h1>
+      </div>
+      <div class="email-body">
+        <p>Hola <strong>{{username}}</strong>,</p>
+        <p>
+          ¡Estamos emocionados de que te unas a nuestra comunidad! Tu registro
+          ha sido exitoso, y ahora formas parte de un grupo increíble de
+          usuarios.
+        </p>
+        <p>Comienza a explorar haciendo clic en el botón de abajo:</p>
+        <a href="{{app_url}}" class="btn">Explorar ahora</a>
+        <p>
+          Si tienes alguna duda o necesitas ayuda, no dudes en contactarnos.
+        </p>
+        <p>¡Gracias por unirte!</p>
+        <p>Atentamente,</p>
+        <p>El equipo de Lonche</p>
+      </div>
+      <div class="email-footer">
+        <p>&copy; 2024 Lonche. Todos los derechos reservados.</p>
+        <p>
+          Este correo se envió porque te registraste recientemente en nuestra
+          plataforma.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

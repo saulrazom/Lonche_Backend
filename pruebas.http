@@ -1,0 +1,65 @@
+### User registration
+POST http://localhost:3000/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"ChecoPerez",
+    "email":"checo@gmail.com",
+    "password":"formula1",
+    "name":"Sergio",
+    "lastname":"Perez",
+    "birthdate":"1990-01-26",
+    "role": "user"
+}
+
+### Post creation
+POST http://localhost:3000/posts HTTP/1.1
+Content-Type: application/json
+
+{
+    "tittle":"Como ser el mejor piloto de F1",
+    "content":"Primero hay que eliminar a la competencia, bla bla bla",
+    "category":"deportes"
+}
+
+### Comment publication
+POST http://localhost:3000/comments HTTP/1.1
+Content-Type: application/json
+
+{
+    "content":"Primero hay que eliminar a la competencia, bla bla bla\nmas rapido que el viento, mas audaz que el aguila bla bla bla" 
+}
+
+### Get user notifications
+GET http://localhost:1234/notifications/api/notifications/671afa12a844d7c42ae08a4a HTTP/1.1
+
+### Post notification
+POST http://localhost:3000/notifications/api/notifications
+Content-Type: application/json
+
+{
+  "sender": "67377888acf57b5e6a68838c",
+  "receiver": "671afa12a844d7c42ae08a4a",
+  "type": "comment",
+  "post": "60c72b2f5f1b2c001f0a8b6f",
+  "date": "2024-11-18T15:00:00Z"
+}
+
+
+### Login
+POST http://localhost:1234/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "beto@correo2.com",
+  "password": "salsa159"
+}
+
+### Login
+POST https://lonchebackend.onrender.com/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "beto@correo2.com",
+  "password": "salsa159"
+}
